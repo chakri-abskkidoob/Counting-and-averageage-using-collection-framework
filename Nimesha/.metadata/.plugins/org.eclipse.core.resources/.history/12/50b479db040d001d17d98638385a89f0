@@ -1,0 +1,16 @@
+package com.Nimesha;
+
+import java.util.*;
+
+public class Main {
+	public static void main(String[] args) {
+		List<Employee> employees = new ArrayList<Employee>();
+		employees.add(new Employee("abc", 30, "male", "hr"));
+		employees.add(new Employee("def", 20, "male", "developer"));
+		employees.add(new Employee("ghi", 35, "male", "hr"));
+		employees.add(new Employee("jkl", 25, "male", "developer"));
+		employees.add(new Employee("mno", 23, "male", "developer"));
+		
+		employees.stream().map(Employee::getDepartment).distinct().forEach(System.out::println);
+	}
+}

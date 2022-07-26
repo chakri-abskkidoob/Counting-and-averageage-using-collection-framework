@@ -1,0 +1,57 @@
+package com.Nimesha;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+
+
+public class InterviewQuestion {
+
+private void printCount(ArrayList<object> list){
+	Set<object> st = new HashSet<object>();
+	for(object s : st) {
+		System.out.println(s+" "+Collections.frequency(list, s));
+	}
+	
+	  
+	  
+  }
+
+  public static void main(String[] args) {
+    InterviewQuestion interviewQuestion = new InterviewQuestion();
+    ArrayList<object> list = new ArrayList<>();
+    list.add(new object("CAR","BMW"));
+    list.add(new object("CAR","HONDA"));
+    list.add(new object("CAR","AUDI"));
+    list.add(new object("FRUIT","APPLE"));
+    list.add(new object("FRUIT","BANANA"));
+    list.add(new object("FRUIT","APPLE"));
+
+    interviewQuestion.printCount(list);
+    
+  }
+}
+class object{
+  public object(String type,String name){
+    this.name = name;
+    this.type = type;
+  }
+  private String type;
+  public String getType() {
+	return type;
+}
+public void setType(String type) {
+	this.type = type;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+private String name;
+}
+    
