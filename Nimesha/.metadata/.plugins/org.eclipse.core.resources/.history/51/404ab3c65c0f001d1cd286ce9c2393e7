@@ -1,0 +1,8 @@
+package com.Nimesha;
+import java.util.*;
+
+public class SchoolMain {
+	List<School> school = new ArrayList<>();
+	school.add(new School(987, "zphs"));
+	
+}

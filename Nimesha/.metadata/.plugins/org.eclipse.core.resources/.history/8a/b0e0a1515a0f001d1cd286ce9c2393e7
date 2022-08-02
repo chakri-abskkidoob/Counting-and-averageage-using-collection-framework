@@ -1,0 +1,12 @@
+package com.Nimesha;
+import java.util.*;
+
+public class Numbersorting {
+
+	public static void main(String[] args) {
+		List<Integer> numbers = Arrays.asList(16, 26, 14, 5, 25, 98);
+		Collections.sort(numbers);
+		System.out.println(numbers);
+	}
+
+}

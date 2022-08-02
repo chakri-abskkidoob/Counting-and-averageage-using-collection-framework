@@ -1,0 +1,12 @@
+package com.Nimesha;
+import java.util.*;
+
+public class ListOfString {
+
+	public static void main(String[] args) {
+		List<String> list = Arrays.asList("One", "two", "three", "four", "five");
+		System.out.println(list);
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.Nimesha;
+import java.util.*;
+
+public class SumOfArrayElementsUsingStreamReduce {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter lenght of array");
+		int length = sc.nextInt();
+		int[] num = new int[length];
+		for(int a = 0; a<length; a++) {
+			num[a] = sc.nextInt();
+		}
+		
+		OptionalInt sum = Arrays.stream(num).reduce((a, b) -> a+a);
+		System.out.println(sum);
+		sc.close();
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.Nimesha;
+import java.util.*;
+
+public class SchoolMain {
+	public static void main(String[] args) {
+		List<School> school = new ArrayList<>();
+		school.add(new School(987, "zphs"));
+		school.add(new School(957, "srividhya"));
+		school.add(new School(956, "jones"));
+		school.add(new School(989, "chaitanya"));
+		Collections.sort(school, new SchoolmarksComp);
+		System.out.println(school);
+	}
+	
+	
+}

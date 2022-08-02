@@ -1,0 +1,38 @@
+package com.Nimesha;
+
+public class School {
+	private int marks;
+	private int name;
+	
+	public School() {
+	}
+
+	public int getMarks() {
+		return marks;
+	}
+
+	public void setMarks(int marks) {
+		this.marks = marks;
+	}
+
+	public int getName() {
+		return name;
+	}
+
+	public void setName(int name) {
+		this.name = name;
+	}
+
+	public School(int marks, int name) {
+		super();
+		this.marks = marks;
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "School [marks=" + marks + ", name=" + name + "]";
+	}
+	
+	
+}

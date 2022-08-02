@@ -1,0 +1,26 @@
+package com.Nimesha;
+
+import java.util.*;
+
+public class LongestThirdString {
+	public static void longest(String[] sarr) {
+		String s = Arrays.stream(sarr)
+				.sorted((s1, s2)->Integer.compare(s2.length(), s1.length()))
+				.skip(2)
+				.findFirst()
+				.get();
+		System.out.println(s);
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter number of elements in array...");
+		int length = sc.nextInt();
+		String[] sarr = new String[length];
+		System.out.println("Enter array elements");
+		for(int a = 0; a<length; a++) {
+			sarr[a] = sc.next();
+		}
+		longest(sarr);
+		sc.close();
+	}
+}

@@ -1,0 +1,27 @@
+package com.Nimesha;
+import java.util.*;
+
+public class SumOfArrayElementsUsingStreamReduce {
+
+	public static void main(String[] args) {
+		List<Integer> num = Arrays.asList(1, 2, 3, 4, 5, 6);
+		
+		System.out.println("Using stream the sum is "+num.stream().reduce((a, b) -> a+b).get());
+		
+		
+		System.out.println("==================================");
+		
+		
+		System.out.println("Sum of even elements using stream "+num.stream()
+		.filter(a -> a%2 == 0)
+		.peek(System.out::println)
+		.map(a -> a+10)
+		.peek(System.out::println)
+		.reduce((a, b) -> a*b)
+		.get());
+		
+		
+
+	}
+
+}

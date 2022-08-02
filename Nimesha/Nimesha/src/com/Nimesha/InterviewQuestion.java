@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 public class InterviewQuestion {
 
-private void printCount(ArrayList<object> list){
+	private void printCount(ArrayList<object> list){
 	list.stream().map(object::getType).distinct().forEach(System.out::println);
 	
 	System.out.println("===============================");

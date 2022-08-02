@@ -1,0 +1,28 @@
+package com.Nimesha;
+
+import java.util.*;
+
+public class LongetsThirdString {
+	public static void main(String[] args) {
+		String[] strArr = {"chakri", "meghana", "mayuri"};
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enetr array length");
+		int length = sc.nextInt();
+		String[] sarr = new String[length];
+		System.out.println("Enter array elements");
+		for(int a = 0; a<length; a++) {
+			sarr[a] = sc.next();
+		}
+		
+		for(String e : sarr) {
+			System.out.println(e);
+		}
+		sc.close();
+		String s = Arrays.stream(strArr)
+				.sorted((s1, s2)->Integer.compare(s2.length(), s1.length()))
+				.skip(2)
+				.findFirst()
+				.get();
+		System.out.println(s);
+	}
+}

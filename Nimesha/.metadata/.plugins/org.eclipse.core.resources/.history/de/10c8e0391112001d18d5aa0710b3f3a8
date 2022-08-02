@@ -1,0 +1,15 @@
+package com.Nimesha;
+import java.util.*;
+
+public class SumOfArrayElementsUsingStreamReduce {
+
+	public static void main(String[] args) {
+		List<Integer> num = Arrays.asList(1, 2, 3, 4, 5, 6);
+		
+		System.out.println(num.stream().reduce((a, b) -> a+b).get());
+		
+		
+
+	}
+
+}
